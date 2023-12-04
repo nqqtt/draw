@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #9db4c9;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+canvas {
+    border: 2px solid #000;
+    margin-bottom: 20px;
+}
+
+.controls {
+    text-align: center;
+}
+
+.control-group {
+    margin-bottom: 10px;
+}
+
+.controls label {
+    margin-right: 10px;
+}
+
+#sizePreview {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    margin-left: 5px;
+    display: none; /* Initially hidden */
+}
+
+.pre-picked-colors {
+    display: flex;
+    gap: 5px;
+}
+
+.pre-picked-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
